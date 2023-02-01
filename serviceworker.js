@@ -1,14 +1,21 @@
 self.addEventListener('install', (e) => {
     e.waitUntil(
       caches.open('fox-store').then((cache) => cache.addAll([
-        '/pwa-examples/a2hs/',
-        '/pwa-examples/a2hs/index.html',
-        '/pwa-examples/a2hs/index.js',
-        '/pwa-examples/a2hs/style.css',
-        '/pwa-examples/a2hs/images/fox1.jpg',
-        '/pwa-examples/a2hs/images/fox2.jpg',
-        '/pwa-examples/a2hs/images/fox3.jpg',
-        '/pwa-examples/a2hs/images/fox4.jpg',
+        '/subbu7788.github.io/',
+        '/subbu7788.github.io/index.html',
+        '/subbu7788.github.io/JS/contrast.js',
+        '/subbu7788.github.io/JS/deque-widgets.min.js',
+        '/subbu7788.github.io/JS/dqu2019.min.js',
+        '/subbu7788.github.io/JS/highlight.js',
+        '/subbu7788.github.io/JS/jquery.min.js',
+        '/subbu7788.github.io/JS/picker.js',
+        '/subbu7788.github.io/CSS/contrast.css',
+        '/subbu7788.github.io/CSS/deque-widgets.min.css',
+        '/subbu7788.github.io/CSS/dqu2019.min.css',
+        '/subbu7788.github.io/CSS/fontawesome-all.min.css',
+        '/subbu7788.github.io/CSS/railscasts.css',
+        '/subbu7788.github.io/CSS/ruleHelp.css',
+        '/subbu7788.github.io/images/eyedropper.png',
       ])),
     );
   });

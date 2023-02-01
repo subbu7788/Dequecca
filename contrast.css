@@ -1,0 +1,430 @@
+.deque-wrapper #up, 
+.deque-wrapper .canvasContainer, 
+.deque-wrapper button.pick {
+  display:none;
+}
+
+
+.deque-wrapper option {
+	padding: 5px 10px;
+}
+.deque-wrapper option.white {
+	color: #FFF;
+}
+.deque-wrapper .canvasContainer.hasImage {
+	float: none;
+}
+.deque-wrapper .hasImage canvas {
+	cursor: all-scroll;
+}
+.deque-wrapper .active {
+	border-color: #00F;
+	border-style: solid;
+	box-shadow: 0 0 0 2px #00F;
+}
+.deque-wrapper .empty .uploadContainer.active {
+	border-style: solid;
+}
+.deque-wrapper canvas {
+	padding: 3px;
+}
+.deque-wrapper canvas.active {
+	cursor: url('dropper.png'), auto;
+	padding: 0;
+}
+
+.deque-wrapper .empty .uploadContainer {
+	border: 6px dotted #00F;
+	height: 440px;
+	left: 4%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 25px;
+	width: 89%;
+}
+.deque-wrapper .empty label {
+	color: #00F;
+	display: table;
+	font-size: 2em;
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+.deque-wrapper .empty label > span {
+	display: table-cell;
+	vertical-align: middle;
+}
+.deque-wrapper .empty #imgLoc {
+	height: 100%;
+	opacity: 0;
+	width: 100%;
+}
+.deque-wrapper .hasImage label {
+	margin-left: 1em;
+}
+.deque-wrapper .hasImage .hideable {
+	display: none;
+}
+
+
+.deque-wrapper .outer, 
+.deque-wrapper .canvasContainer {
+	margin: 0 0 1em;
+	padding: 0;
+	text-align: center;
+  
+}
+.deque-wrapper .inner {
+	background: #FFF;
+	border: 1px solid #767676;
+	margin: 15px 4px 1em 4px;
+	padding: 0.5em;
+  /* width:350px; */
+}
+.deque-wrapper button {
+	border: 1px solid #BBB;
+	height: 28px;
+}
+.deque-wrapper .outer > legend {
+  width:100%;
+  text-align:center;
+}
+.deque-wrapper legend {
+	text-align: left;
+  font-weight:bold;
+  font-size:1.2em;
+}
+.deque-wrapper .pick {
+	background: url('dropper.png') no-repeat 6px center #EEE;
+	padding-left: 24px;
+}
+.deque-wrapper #fieldsetContainer {
+	vertical-align: top;
+  margin:auto;
+  /*width:500px;*/
+}
+.deque-wrapper fieldset {
+  border-radius:0;
+  border:0;
+}
+.deque-wrapper #fieldsetContainer > fieldset > legend,
+.deque-wrapper .canvasContainer > legend {
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.deque-wrapper .canvasContainer {
+	float: left;
+}
+.deque-wrapper .canvasContainer.empty {
+	position: relative;
+}
+.deque-wrapper .zoomTools,
+.deque-wrapper .uploadContainer {
+	border: 0;
+	text-align: center;
+}
+.deque-wrapper .zoom {
+	font-size: 1.5em;
+	font-weight: bold;
+	height: auto;
+	line-height: 24px;
+}
+.deque-wrapper #zoomRange {
+	margin: 0 0.5em 1em;
+	vertical-align: top;
+}
+.deque-wrapper #fit {
+	font-size: 1em;
+	font-weight: normal;
+	margin-left: 0;
+	vertical-align: top;
+}
+.deque-wrapper .inner > span > input,
+.deque-wrapper .inner > span > select {
+	display: block;
+}
+.deque-wrapper .inner > span > select {
+  height:2.2em;
+}
+.deque-wrapper .inner > span {
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+  margin:0 2px;
+}
+
+.deque-wrapper input[type=text] {
+	border: 1px solid #767676;
+	height: auto;
+	text-transform: uppercase;
+}
+.deque-wrapper input[id$=Hex] {
+	width: 5.75em;
+}
+.deque-wrapper input[id$=Rgb] {
+	width: 5.75em;
+}
+.deque-wrapper input[type=color] {
+	vertical-align: middle;
+	width: 5em;
+  border:1px solid #767676;
+  margin:0;
+  padding:0;
+  height:33px;
+  width:50px;
+}
+.deque-wrapper .pick {
+	margin-top: 1em;
+}
+.deque-wrapper .inner > span.lightness {
+	display: block;
+	margin:15px 0 15px 0;
+	text-align: center;
+}
+
+.deque-wrapper .lightness input {
+	width: 100%;
+}
+.deque-wrapper .lightness > span {
+	display: inline-block;
+	vertical-align: top;
+	width: 98%;
+  height:30px;
+}
+
+.deque-wrapper .lightness input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 98%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+  margin:5px 0 0 0;
+  padding:0 1%;
+  position:relative;
+  z-index:200;
+  height:38px;
+}
+
+.deque-wrapper .lightness input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.deque-wrapper .lightness input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  border: 1px #a40c0e solid;
+	padding-bottom: 6px;
+}
+
+.deque-wrapper .lightness input[type=range]::-ms-track {
+  width: 100%;
+  height:36px;
+  cursor: default;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+.deque-wrapper .lightness input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 0px;
+  background: #ffffff;
+  cursor: default;
+  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 0px 0px 0px 0px #fff; /* Add cool effects to your sliders! */
+  position:relative;
+  top:10px;
+}
+
+.deque-wrapper .lightness input[type=range]:focus::-webkit-slider-thumb,
+.deque-wrapper .lightness input[type=range]:focus::-moz-range-thumb,
+.deque-wrapper .lightness input[type=range]:focus::-ms-thumb {
+  outline:2px solid blue;
+}
+/* All the same stuff for Firefox */
+.deque-wrapper .lightness input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px ##fff, 0px 0px 1px #fff;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 0px;
+  background: #ffffff;
+  cursor: default;
+  z-index:201;
+}
+
+/* All the same stuff for IE */
+.deque-wrapper .lightness input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #fff, 0px 0px 0px #fff;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  margin:0;
+  border-radius: 0px;
+  background: #ffffff;
+  cursor: default;
+  position:relative;
+  top:26px;
+  z-index:200;
+}
+.deque-wrapper .lightness input[type=range]::-moz-range-track {
+  display:none;
+  height:0;
+}
+.deque-wrapper .lightness input[type=range]::-ms-track {
+  height:0px;
+  overflow:hidden;
+  height:0px;
+}
+.deque-wrapper .swatch {
+  position:relative;
+  top:-22.5px;
+  display: inline-block;
+  width: 100%;
+  margin:0 0 20px 0;
+  height:10px;
+}
+.deque-wrapper .sample {
+	background: #FFF;
+	border: 1px solid #CCC;
+	color: #000;
+	font-size: 1em;
+	text-align: center;
+  padding:2px 0;
+  line-height:2em;
+}
+.deque-wrapper .sample .sampleLarge {
+	font-size: 2em;
+}
+.deque-wrapper table {
+	border-collapse: collapse;
+	margin: 1em auto;
+  line-height:1em;
+}
+.deque-wrapper th, 
+.deque-wrapper td {
+	background: #FFF;
+	border: 1px solid #CCC;
+	padding: 0.5em;
+}
+.deque-wrapper caption {
+  font-weight:bold;
+  font-size:18px;
+  line-height:2em;
+}
+.deque-wrapper .toOne {
+  letter-spacing:-2px;
+}
+
+table tbody tr:nth-child(even) td  { background:#900; }
+.deque-wrapper td {
+  background:#900;
+  color:#fff;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+.deque-wrapper .pass {
+	background: #ACF79B;
+  color:#000;
+  font-weight:normal;
+  text-transform:none;
+  letter-spacing:normal;
+}
+.deque-wrapper .empty .fauxButton {
+	background: #DEF;
+	color: #00D;
+	border: 2px outset #9CF;
+	display: block;
+	margin: 1em auto;
+	padding: 0.5em 0;
+	width: 9em;
+}
+.deque-wrapper .empty .uploadContainer.active .fauxButton {
+	background: #9CF;
+	color: #009;
+}
+.deque-wrapper [aria-invalid=true] {
+	background: #FF8;
+}
+.deque-wrapper #errMsg {
+	background: #900;
+	color: #FFF;
+	left: 0;
+	line-height: 2em;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+}
+.deque-wrapper .hidden {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.large-text-cls {
+	text-align: center;
+    line-height: 1.4em;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 950px) {
+	.deque-wrapper label[for=imgLoc] {
+		font-size: 1.5em;
+	}
+}
+@media only screen and (max-width: 750px) {
+	.deque-wrapper h1 span {
+		white-space: nowrap;
+	}
+	.deque-wrapper #fieldsetContainer {
+		margin: 0;
+		width: 99%;
+	}
+	.deque-wrapper .canvasContainer, .pick {
+		display: none;
+	}
+}
+
+.pickerbtn{
+
+	min-width: initial !important;
+	max-height: initial !important;
+	height: 35px !important;
+	width: 50px !important;
+	padding: 0px !important;
+	background-color: #fff !important;
+	margin-top: 5px !important;
+	border: 1px solid black !important;
+}
+
+/* flexbox */
+.columns {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+  }
+
+
+  .columnswrap {
+	display: flex;
+	flex-direction: row;
+	
+  }
+  
+  .column {
+	flex: 33.33%;
+  }

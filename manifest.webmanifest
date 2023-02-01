@@ -1,0 +1,15 @@
+{
+    "background_color": "purple",
+    "description": "Color contrast Analyser tool to validate the contrast issues against WCAG guideline ",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "icon/fox-icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "name": "Deque Color contrast Analyser",
+    "short_name": "DequeCCA",
+    "start_url": "/pwa-examples/a2hs/index.html"
+  }

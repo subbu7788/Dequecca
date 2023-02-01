@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+
+	<!-- Google Tag Manager -->
+	
+	<!-- End Google Tag Manager -->
+	
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Deque Color Contrast Analyzer</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	
+	<link rel="stylesheet" type="text/css" href="/CSS/ruleHelp.css" id="styles1">
+	<link rel="stylesheet" type="text/css" href="/CSS/deque-widgets.min.css" id="styles2">
+	<link rel="stylesheet" type="text/css" href="/CSS/railscasts.css" id="styles3">
+	<link rel="stylesheet" type="text/css" href="/CSS/fontawesome-all.min.css" id="styles4">
+	<link rel="stylesheet" type="text/css" href="/CSS/dqu2019.min.css?refresh=1" id="styles5">
+	
+	<link rel="stylesheet" type="text/css" href="/CSS/contrast.css" id="additionalCss1" class="pageSpecific">
+	<link rel="manifest" href="manifest.webmanifest">
+	
+	
+	<style id="headStyles" class="pageSpecific">
+	@media (max-width:1020px) {
+	.colLeft, .colRight {
+	width:100%;
+	clear:both;
+	float:none;
+	}
+	.note {
+	max-width:90%;
+	}
+	@media only screen and (max-width:750px) {
+	.colLeft, .colRight {
+	max-width:100%;
+	}
+	.deque-wrapper #fieldsetContainer {
+	margin:auto !important;
+	max-width:100%;
+	width:100%;
+	}
+	.deque-wrapper .inner {
+	width:95% !important;
+	}
+	}
+	@media (max-width:500px) {
+	.colLeft, .colRight {
+	max-width:100%;
+	}
+	.deque-wrapper #fieldsetContainer {
+	
+	}
+	.deque-wrapper .inner {
+	width:90%;
+	}
+	.note {
+	max-width:80%;
+	}
+	}
+	</style>
+	
+	
+	
+	<script src="/JS/jquery.min.js" id="scripts1" class="pageSpecific"></script>
+	
+	<style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><meta http-equiv="origin-trial" content="A7bG5hJ4XpMV5a3V1wwAR0PalkFSxLOZeL9D/YBYdupYUIgUgGhfVJ1zBFOqGybb7gRhswfJ+AmO7S2rNK2IOwkAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+	<body data-new-gr-c-s-check-loaded="14.1085.0" data-gr-ext-installed="">
+        <button class="add-button">Add to home screen</button>
+	  <div id="page" class="site">
+	
+		
+		<div class="site-content">
+		  <main id="content" tabindex="-1">
+	    
+			<div id="contentwrapper">
+	
+			  
+	
+			  <div id="h1Wrapper" tabindex="-1">
+				<span id="srLoadSummary" class="visually-hidden"></span>	
+			  </div>
+			  <div id="pageInnerContent">
+	
+	
+	<style>#pageInnerContent h1:nth-of-type(1){display:none;}</style>
+	<h1>Deque Color Contrast Analyzer</h1>	
+	<div class="columns">
+<div class="deque-wrapper">
+    	<span id="errMsg" role="region" aria-live="assertive" aria-atomic="true" aria-relevant="all"></span>
+
+		
+
+			<div id="fieldsetContainer" ></div>
+
+			
+
+				<canvas id="canvas" hidden height="480"></canvas>
+
+				
+
+		
+
+		
+  <div class="clear"></div>
+</div>
+<script type="text/javascript" src="/JS/contrast.js"></script>
+
+</div>
+	
+	<div >
+	<details ><summary style="display: list-item;">Color Contrast Requirements Details</summary>	
+	<div class="note"><h2>Color Contrast Requirements</h2><p>As explained in the <a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines</a> (WCAG), people with low vision require sufficient contrast for the following:</p>
+	<ol>
+		<li><strong>Text and background</strong> (see <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">WCAG 1.4.3</a> and <a href="https://www.w3.org/TR/WCAG21/#contrast-enhanced">WCAG 1.4.6</a>)
+			<ul>
+				<li> Examples: regular text, text embedded in images (which is generally bad practice for multiple reasons)</li>
+			</ul>
+		</li>
+		<li><strong>Graphical objects, user interface components and states</strong> (see <a href="https://www.w3.org/TR/WCAG21/#non-text-contrast">WCAG 1.4.11</a>).
+			<ul>
+				<li><strong>Graphical objects:</strong> icons, font icons, etc.</li>
+				<li><strong>Components:</strong> the boundary or borders between buttons, menu items, form controls and inputs, etc.</li>
+				<li><strong>States:</strong> selected elements, elements with keyboard focus; expanded vs. collapsed, active vs. inactive, etc.</li>
+			</ul>
+		</li>
+	</ol>
+	</div>
+	<div>
+		<h2>Learn More in Deque University Courses</h2>
+	<p>Sign up for the course on <a href="curriculum/courses/visual-design">Visual Design and Colors</a>, or enroll in a more <a href="curriculum/online-classes/">complete accessibility curriculum package.</a></p>
+	
+		</div>
+</details>
+	</div>
+	
+	
+	  
+	
+	
+	<div aria-live="polite" id="polite" class="visually-hidden"></div>
+	<div aria-live="assertive" id="assertive" class="visually-hidden"></div>
+	
+	
+	<div class="pageSpecific">
+	
+	</div>
+	
+	
+	
+	<script src="/JS/deque-widgets.min.js"></script>
+	<script src="/JS/highlight.js" id="additionalScriptsInheritable1" class="pageSpecific"></script>
+	
+	
+	
+	
+	
+	</body>
+	</html>

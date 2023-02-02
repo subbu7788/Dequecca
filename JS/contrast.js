@@ -113,7 +113,7 @@ function initilizeWidget() {
           '<div id="' + orupVal[0] + 'Text" class="sample" aria-hidden="true"> Small sample text.<br><span class="sampleLarge">Large sample text.</span></div>' +
           '<table>' +
           '<caption role="region" aria-live="polite" aria-atomic="true"> Contrast Ratio  = <span id="' + orupVal[0] + 'Ratio"></span> <button class=\"pickerbtn\" id=\"copyCCD\" style=\" background: transparent;border: transparent !important;\" title=\"Copy  Contrast Ratio Details\"  aria-label=\"Copy  Contrast Ratio details\"  > <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" style=\"stroke: #FFFFFF;stroke-width: 1.25px;\"><path d=\"M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z\"/></svg></button><span id=\"copyStatus\" aria-live=\"assertive\" style=\"font-size:12px;font-weight: normal\"></span></caption>' +
-          '<tr><th scope="col">WCAG Standard</th><th scope="col">Small Text</th><th scope="col" class="large-text-cls">Large Text,UI Components, & Graphical Objects</th></tr>' +
+          '<tr><th scope="col">WCAG Standard</th><th scope="col">Small Text (4.5:1)</th><th scope="col" class="large-text-cls">Large Text,UI Components, & Graphical Objects (3:1)</th></tr>' +
           '<tr><th scope="row">AA</th><td id="' + orupVal[0] + 'SmallAA"></td><td id="' + orupVal[0] + 'LargeAA"></td></tr>' +
           '<tr><th scope="row">AAA</th><td id="' + orupVal[0] + 'SmallAAA"></td><td id="' + orupVal[0] + 'LargeAAA"></td></tr>' +
           '</table>' +

@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('/pwa-examples/a2hs/sw.js')
+    .register('/Dequecca/serviceworker.js')
     .then(() => { console.log('Service Worker Registered'); });
 }
 // Code to handle install prompt on desktop

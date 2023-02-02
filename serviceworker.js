@@ -18,6 +18,7 @@ self.addEventListener('install', (e) => {
         '/Dequecca/CSS/railscasts.css',
         '/Dequecca/CSS/ruleHelp.css',
         '/Dequecca/images/eyedropper.png',
+        '/Dequecca/images/logo.png',
       ])),
     );
   });

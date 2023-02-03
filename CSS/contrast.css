@@ -410,21 +410,3 @@ table tbody tr:nth-child(even) td  { background:#900; }
 	border: 1px solid black !important;
 }
 
-/* flexbox */
-.columns {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
-  }
-
-
-  .columnswrap {
-	display: flex;
-	flex-direction: row;
-	
-  }
-  
-  .column {
-	flex: 33.33%;
-  }

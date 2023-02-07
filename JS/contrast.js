@@ -91,7 +91,7 @@ function initilizeWidget() {
     // Create the form
     $.each(orup, function (i, orupVal) {
       $('#fieldsetContainer')
-        .append('<fieldset id="' + orupVal[0] + '" class="columnswrap outer" ><legend> <span role="heading" level="1"> Deque Color Contrast Analyzer </span> </legend></fieldset>');
+        .append('<fieldset id="' + orupVal[0] + '" class="columnswrap outer" ><legend> <span role="heading" level="1">Color Contrast Analyzer </span> </legend></fieldset>');
       $.each(foreback, function (i, forebackVal) {
         $('#' + orupVal[0])
           .append(
@@ -112,7 +112,7 @@ function initilizeWidget() {
           '<fieldset class="column inner"><legend> Result </legend>' +
           '<div id="' + orupVal[0] + 'Text" class="sample" aria-hidden="true"> Small sample text.<br><span class="sampleLarge">Large sample text.</span></div>' +
           '<table>' +
-          '<caption role="region" aria-live="polite" aria-atomic="true"> Contrast Ratio  = <span id="' + orupVal[0] + 'Ratio"></span> <button class=\"pickerbtn\" id=\"copyCCD\" style=\" background: transparent;border: transparent !important;\" title=\"Copy  Contrast Ratio Details\"  aria-label=\"Copy  Contrast Ratio details\"  > <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" style=\"stroke: #FFFFFF;stroke-width: 1.25px;\"><path d=\"M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z\"/></svg></button><span id=\"copyStatus\" aria-live=\"assertive\" style=\"font-size:12px;font-weight: normal\"></span></caption>' +
+          '<caption role="region" aria-live="polite" aria-atomic="true"> Contrast Ratio  = <span id="' + orupVal[0] + 'Ratio"></span><div> <label for="copyCriteria">Select Copy Criteria</label> <select id="copyCriteria"> <option value="1">Text</option> <option value="2">Link (use of color)</option> <option value="3">Icons</option><option value="4">Placeholder</option><option value="5">Focus indicator (use of color)</option><option value="6">Visual Boundary (Inner)</option><option value="7">Visual Boundary (outer)</option><option value="8">Focus indicator (Inner)</option><option value="9">Focus indicator (outer)</option><option value="10">Selected State</option><option value="11">Graphical object</option></select>  <button class=\"pickerbtn\" id=\"copyCCD\" style=\" background: transparent;border: transparent !important;\" title=\"Copy  Contrast Ratio Details\"  aria-label=\"Copy  Contrast Ratio details\"  > <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" style=\"stroke: #FFFFFF;stroke-width: 1.25px;\"><path d=\"M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z\"/></svg></button><span id=\"copyStatus\" aria-live=\"assertive\" style=\"font-size:12px;font-weight: normal\"></span></div></caption>' +
           '<tr><th scope="col">WCAG Standard</th><th scope="col">Small Text (4.5:1)</th><th scope="col" class="large-text-cls">Large Text,UI Components, & Graphical Objects (3:1)</th></tr>' +
           '<tr><th scope="row">AA</th><td id="' + orupVal[0] + 'SmallAA"></td><td id="' + orupVal[0] + 'LargeAA"></td></tr>' +
           '<tr><th scope="row">AAA</th><td id="' + orupVal[0] + 'SmallAAA"></td><td id="' + orupVal[0] + 'LargeAAA"></td></tr>' +
@@ -384,7 +384,7 @@ function initilizeWidget() {
 
     // Select a named color
     $('select').change(function () {
-      if ($(this).attr('id') != 'languageSelector') {
+      if ($(this).attr('id') == 'orForeName' || $(this).attr('id') == 'orBackName') {
         var $this = $(this);
         $this.val($this.children('option:selected').val());
         update($this);
@@ -629,15 +629,57 @@ function initilizeWidget() {
      ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : orig;
    }
 
+
+   
+
   document.getElementById('copyCCD').addEventListener("click",()=>{
 
-    let myMessage = "Foreground Color :" + document.getElementById('orForeHex').value +"\nBackground Color :" + document.getElementById('orBackHex').value + "\nContrast Ratio   : " + document.getElementById('orRatio').innerText + " ";
+    switch (Number(document.getElementById('copyCriteria').value)) {
+      case 1:
+          copyColor("Foreground text","Background");
+          break;
+      case 2:
+          copyColor("Link text","Surrounding text");
+          break;
+        case 3:
+          copyColor("Icon ","Adjacent");
+          break;
+        case 4:
+          copyColor("Placeholder text","Background");
+          break;
+        case 5:
+          copyColor("Default","Focused state");
+          break;
+        case 6:
+          copyColor("Visual Boundary","Inner adjacent");
+          break;
+        case 7:
+          copyColor("Visual Boundary","Outer adjacent");
+          break;
+        case 8:
+          copyColor("Focus indicator","Inner adjacent");
+          break;
+        case 9:
+          copyColor("Focus indicator","Outer adjacent");
+          break;
+        case 10:
+          copyColor("Selected state","Adjacent");
+          break;
+        case 11:
+          copyColor("Graphical object","Adjacent");
+          break;
+    }
+
+    
+   function copyColor (color1,color2){
+    let myMessage = ""+ color1 +" color :" + document.getElementById('orForeHex').value +"\n" + color2 +" color :" + document.getElementById('orBackHex').value + "\nContrast Ratio   : " + document.getElementById('orRatio').innerText + " ";
     navigator.clipboard.writeText(myMessage);
 
     document.getElementById('copyStatus').innerText ="Copied"
 
     setTimeout(()=>{document.getElementById('copyStatus').innerText =""},10000);
-
+   }
+       
   });
 
 

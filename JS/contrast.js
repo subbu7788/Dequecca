@@ -95,7 +95,7 @@ function initilizeWidget() {
       $.each(foreback, function (i, forebackVal) {
         $('#' + orupVal[0])
           .append(
-            '<fieldset class="column inner"><legend>' + forebackVal + 'groundColor </legend>' +
+            '<fieldset class="column inner"><legend>' + forebackVal + 'ground Color </legend>' +
             '<span><label for="' + orupVal[0] + forebackVal + 'Hex">Hex:</label><input type="text" id="' + orupVal[0] + forebackVal + 'Hex" maxlength="7" aria-describedby="errMsg"></span>' +
             '<span><label for="' + orupVal[0] + forebackVal + 'Rgb">RGB:</label><input type="text" id="' + orupVal[0] + forebackVal + 'Rgb" maxlength="13" aria-describedby="errMsg"></span>' +
             '<span class="inputColor"><label for="' + orupVal[0] + forebackVal + 'Choose"> Color: </label><input type="color" id="' + orupVal[0] + forebackVal + 'Choose" role="button" aria-label=" Choose ' + forebackVal.toLowerCase() + 'groundColor "> <button class="pickerbtn" id="' + forebackVal.toLowerCase() + 'ground-picker" aria-label="' + forebackVal.toLowerCase() + 'ground color picker" title="' + forebackVal.toLowerCase() + 'ground color picker"><img src="images/eyedropper.png" alt="" style="height: 2rem;width:2rem"></button></span>' +

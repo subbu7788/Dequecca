@@ -166,7 +166,21 @@
 	<script src="/Dequecca/JS/deque-widgets.min.js"></script>
 	<script src="/Dequecca/JS/highlight.js" id="additionalScriptsInheritable1" class="pageSpecific"></script>
 	
-	
+	<script>
+		
+// Register service worker to control making site work offline
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker
+      .register("/serviceWorker.js")
+      .then(res => console.log("service worker registered"))
+      .catch(err => console.log("service worker not registered", err));
+  });
+}
+
+		
+	</script>
 	
 	
 	

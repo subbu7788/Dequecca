@@ -20519,7 +20519,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #contentwrapper {
-    margin: 2rem auto;
+    margin: 0.2rem auto;
     min-height: 500px;
     max-width: 1340px;
     padding: 0 2.5rem

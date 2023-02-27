@@ -80,7 +80,7 @@
 .deque-wrapper .inner {
 	background: #FFF;
 	border: 1px solid #767676;
-	margin: 15px 4px 1em 4px;
+	margin: 2px 4px 2px 4px;
 	padding: 0.5em;
   /* width:350px; */
 }
@@ -182,7 +182,7 @@
 }
 .deque-wrapper .inner > span.lightness {
 	display: block;
-	margin:15px 0 15px 0;
+	margin:2px 0 12px 0;
 	text-align: center;
 }
 
@@ -297,15 +297,15 @@
 	color: #000;
 	font-size: 1em;
 	text-align: center;
-  padding:2px 0;
-  line-height:2em;
+  padding:1px 0;
+  line-height:1.75em;
 }
 .deque-wrapper .sample .sampleLarge {
 	font-size: 2em;
 }
 .deque-wrapper table {
 	border-collapse: collapse;
-	margin: 1em auto;
+	margin: 1px auto;
   line-height:1em;
 }
 .deque-wrapper th, 
@@ -317,7 +317,6 @@
 .deque-wrapper caption {
   font-weight:bold;
   font-size:18px;
-  line-height:2em;
 }
 .deque-wrapper .toOne {
   letter-spacing:-2px;

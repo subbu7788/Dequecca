@@ -98,7 +98,7 @@ function initilizeWidget() {
             '<fieldset class="column inner"><legend>' + forebackVal + 'ground Color </legend>' +
             '<span><label for="' + orupVal[0] + forebackVal + 'Hex">Hex:</label><input type="text" id="' + orupVal[0] + forebackVal + 'Hex" maxlength="7" aria-describedby="errMsg"></span>' +
             '<span><label for="' + orupVal[0] + forebackVal + 'Rgb">RGB:</label><input type="text" id="' + orupVal[0] + forebackVal + 'Rgb" maxlength="13" aria-describedby="errMsg"></span>' +
-            '<span class="inputColor"><label for="' + orupVal[0] + forebackVal + 'Choose"> Color: </label><input type="color" id="' + orupVal[0] + forebackVal + 'Choose" role="button" aria-label=" Choose ' + forebackVal.toLowerCase() + 'groundColor "> <button class="pickerbtn" id="' + forebackVal.toLowerCase() + 'ground-picker" aria-label="' + forebackVal.toLowerCase() + 'ground color picker" title="' + forebackVal.toLowerCase() + 'ground color picker"><img src="images/eyedropper.png" alt="" style="height: 2rem;width:2rem"></button></span>' +
+            '<span class="inputColor"><label for="' + orupVal[0] + forebackVal + 'Choose"> Color: </label><input type="color" id="' + orupVal[0] + forebackVal + 'Choose" role="button" aria-label=" Choose ' + forebackVal.toLowerCase() + 'groundColor "> </span> <span style="padding:16px 1.5px 1.5px 1.5px"> <button class="pickerbtn" id="' + forebackVal.toLowerCase() + 'ground-picker" aria-label="' + forebackVal.toLowerCase() + 'ground color picker" title="' + forebackVal.toLowerCase() + 'ground color picker"><img src="images/eyedropper.png" alt="" style="height: 2rem;width:2rem"></button></span>' +
             '<span><label for="' + orupVal[0] + forebackVal + 'Name"> Name: </label><select id="' + orupVal[0] + forebackVal + 'Name"></select></span>' +
 
             '<button type="button" id="' + orupVal[0] + forebackVal + 'Pick" class="pick" aria-disabled="true" disabled title="Upload an image first.">Pick from image</button>' +
@@ -112,7 +112,7 @@ function initilizeWidget() {
           '<fieldset class="column inner"><legend> Result </legend>' +
           '<div id="' + orupVal[0] + 'Text" class="sample" aria-hidden="true"> Small sample text.<br><span class="sampleLarge">Large sample text.</span></div>' +
           '<table>' +
-          '<caption role="region" aria-live="polite" aria-atomic="true"> Contrast Ratio  = <span id="' + orupVal[0] + 'Ratio"></span><div> <label for="copyCriteria">Criteria</label> <select id="copyCriteria"> <option value="1">Regular Text(1.4.3.a)</option> <option value="2">Placeholder Text (1.4.3.a)</option> <option value="3">Link or button text (Hover /Focus)(1.4.3.a)</option><option value="4">Regular Text(Gradient Background)(1.4.3.a)</option><option value="5">Large Text(1.4.3.b)</option> <option value="6">Large Link or button text (Hover /Focus)(1.4.3.b)</option><option value="7">Large Text(Gradient Background)(1.4.3.b)</option><option value="8">Focus indicator (1.4.1.a)</option><option value="9">Visual Boundary (1.4.11.a - Inner)</option><option value="10">Visual Boundary (1.4.11.a - outer)</option><option value="11">Focus indicator (1.4.11.b - Inner)</option><option value="12">Focus indicator (1.4.11.b - outer)</option><option value="13">Selected State (1.4.11.b)</option><option value="14">Icons (1.4.11.c)</option><option value="15">Graphical object  (1.4.11.c)</option> <option value="16"> Link contrast (1.4.1.b)</option><option value="17"> Focus indicator on border (1.4.11.b)</option> <option value="20">General</option> </select>  <button class=\"pickerbtn\" id=\"copyCCD\" style=\" background: transparent;border: transparent !important;\" title=\"Copy  Contrast Ratio Details\"  aria-label=\"Copy  Contrast Ratio details\"  > <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" style=\"stroke: #FFFFFF;stroke-width: 1.25px;\"><path d=\"M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z\"/></svg></button><span id=\"copyStatus\" aria-live=\"assertive\" style=\"font-size:12px;font-weight: normal\"></span></div></caption>' +
+          '<caption role="region" aria-live="polite" aria-atomic="true"> Contrast Ratio  = <span id="' + orupVal[0] + 'Ratio"></span><div> <label for="copyCriteria">Criteria</label> <select id="copyCriteria"> <option value="1">Regular Text(1.4.3.a)</option> <option value="2">Placeholder Text (1.4.3.a)</option> <option value="3">Link or button text (Hover /Focus)(1.4.3.a)</option><option value="4">Regular Text(Gradient Background)(1.4.3.a)</option><option value="5">Large Text(1.4.3.b)</option> <option value="6">Large Link or button text (Hover /Focus)(1.4.3.b)</option><option value="7">Large Text(Gradient Background)(1.4.3.b)</option><option value="8">Focus indicator (1.4.1.a)</option><option value="9">Visual Boundary (1.4.11.a - Inner)</option><option value="10">Visual Boundary (1.4.11.a - outer)</option><option value="11">Focus indicator (1.4.11.b - Inner)</option><option value="12">Focus indicator (1.4.11.b - outer)</option><option value="13">Selected State (1.4.11.b)</option><option value="14">Icons (1.4.11.c)</option><option value="15">Graphical object  (1.4.11.c)</option> <option value="16"> Link contrast (1.4.1.b)</option><option value="17"> Focus indicator on border (1.4.11.b)</option> <option value="20">General</option> </select>  <button class=\"pickerbtn\" id=\"copyCCD\" style=\" background: transparent;border: transparent !important;height:25px !important\" title=\"Copy  Contrast Ratio Details\"  aria-label=\"Copy  Contrast Ratio details\"  > <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" style=\"stroke: #FFFFFF;stroke-width: 1.25px;\"><path d=\"M18 6v-6h-18v18h6v6h18v-18h-6zm-12 10h-4v-14h14v4h-10v10zm16 6h-14v-14h14v14z\"/></svg></button><span id=\"copyStatus\" aria-live=\"assertive\" style=\"font-size:12px;font-weight: normal\"></span></div></caption>' +
           '<tr><th scope="col">WCAG Standard</th><th scope="col">Small Text (4.5:1)</th><th scope="col" class="large-text-cls">Large Text,UI Components, & Graphical Objects (3:1)</th></tr>' +
           '<tr><th scope="row">AA</th><td id="' + orupVal[0] + 'SmallAA"></td><td id="' + orupVal[0] + 'LargeAA"></td></tr>' +
           '<tr><th scope="row">AAA</th><td id="' + orupVal[0] + 'SmallAAA"></td><td id="' + orupVal[0] + 'LargeAAA"></td></tr>' +
@@ -664,27 +664,27 @@ function initilizeWidget() {
           copyColor("Foreground text","Background (Gradient)",msg7);
           break;
         case 8:
-          let msg8 ="When color alone is used as the focus indicator of an element, people who are blind, have low vision, or are color blind will not be able to understand the focussed state of an element. It is imperative to have a 3:1 contrat ratio between the default border color and focused state color so that users with color blindness or low vision will be able to understand the element that is in a focussed state."
+          let msg8 ="When color alone is used as the focus indicator of an element, people who are blind, have low vision, or are color blind will not be able to understand the focussed state of an element. It is imperative to have a 3:1 contrast ratio between the default border color and focused state color so that users with color blindness or low vision will be able to understand the element that is in a focussed state."
           copyColor("Focus indicator","Default Element",msg8);
           break;
         case 9:
-          let msg9 ="It is important for a low vision or color blind user to know the visual boundary of an input element as it makes it easy for the user to know where to interact. To let that happen, we need to have a 3:1 contrast ration between the visual boundary color and its background, from the details above we can see that the ratio is less than 3:1, making it difficult for the color blind user to identify the interactive area of the input element."
+          let msg9 ="It is important for a low vision or color blind user to know the visual boundary of an input element as it makes it easy for the user to know where to interact. To let that happen, we need to have a 3:1 contrast ratio between the visual boundary color and its background, from the details above we can see that the ratio is less than 3:1, making it difficult for the color blind user to identify the interactive area of the input element."
           copyColor("Visual boundary","Inner adjacent",msg9);
           break;
         case 10:
-          let msg10="It is important for a low vision or color blind user to know the visual boundary of an input element as it makes it easy for the user to know where to interact. To let that happen, we need to have a 3:1 contrast ration between the visual boundary color and its background, from the details above we can see that the ratio is less than 3:1, making it difficult for the color blind user to identify the interactive area of the input element"
+          let msg10="It is important for a low vision or color blind user to know the visual boundary of an input element as it makes it easy for the user to know where to interact. To let that happen, we need to have a 3:1 contrast ratio between the visual boundary color and its background, from the details above we can see that the ratio is less than 3:1, making it difficult for the color blind user to identify the interactive area of the input element."
           copyColor("Visual boundary","Outer adjacent",msg10);
           break;
         case 11:
-          let msg11="When the visual focus indicator of an element is inside the component it needs to have a contrast ratio of 3:1 at the minimum with its inner background. From the color codes we can see that the visual focus indicator is not meeting the minimum threshold for the contrast with its inner adjacent color making it difficult for the color blind and low vision users to identify the focussed element."
+          let msg11="When the visual focus indicator of an element is inside the component it needs to have a contrast ratio of 3:1 at the minimum with its inner background. From the color codes we can see that the visual focus indicator is not meeting the minimum threshold for the contrast with its inner adjacent color making it difficult for the colorblind and low vision users to identify the focussed element."
           copyColor("Focus indicator","Inner adjacent",msg11);
           break;
         case 12:
-          let msg12="When the visual focus indicator of an element is outside the component it needs to have a contrast ratio of 3:1 at the minimum with its outer background. From the color codes we can see that the visual focus indicator is not meeting the minimum threshold for the contrast with its outter adjacent color making it difficult for the color blind and low vision users to identify the focussed element."
+          let msg12="When the visual focus indicator of an element is outside the component it needs to have a contrast ratio of 3:1 at the minimum with its outer background. From the color codes we can see that the visual focus indicator is not meeting the minimum threshold for the contrast with its outer adjacent color making it difficult for the colorblind and low vision users to identify the focussed element."
           copyColor("Focus indicator","Outer adjacent",msg12);
           break;  
         case 13:
-          let msg13="When the color contrast ratio of an interactive element's state with its background is less than 3:1, it becomes difficult for a color blind or low vision user to understand different states of the element. "
+          let msg13="When the color contrast ratio of an interactive element's state with its background is less than 3:1, it becomes difficult for a color blind or low vision user to understand different states of the element."
           copyColor("Selected state","Adjacent",msg13);
           break; 
         case 14:
@@ -692,7 +692,7 @@ function initilizeWidget() {
           copyColor("Icon","Adjacent background",msg14);
           break;  
         case 15:
-          let msg15 ="Graphs convey crucial information about the data but when the colors used in the graphs do not meet the contrast ratio of 3:1 with its adjusent colors, then color blind and low vision users will not be able to perceive or understand the graph's intent."
+          let msg15 ="Graphs convey crucial information about the data but when the colors used in the graphs do not meet the contrast ratio of 3:1 with its adjacent colors, then colorblind and low vision users will not be able to perceive or understand the graph's intent."
           copyColor("Graphical object","Adjacent",msg15);
           break;  
         case 16:
@@ -700,7 +700,7 @@ function initilizeWidget() {
           copyColor("Link text","Surrounding text",msg16);
           break;   
         case 17:
-          let msg17 ="\nFocus indicator color :"+ document.getElementById('orForeHex').value + "\nOuter adjacent color :Fill details\nContrast Ratio   : Fill details\n\nVisual focus indicator of an element needs to have a contrast ratio of 3:1 at the minimum with its inner and outer background. From the color codes we can see that the visual focus indicator is not meeting the minimum threshold for the contrast with its inner adjacent color making it difficult for the color blind and low vision users to identify the focussed element."
+          let msg17 ="\nFocus indicator color :"+ document.getElementById('orForeHex').value + "\nOuter adjacent color :Fill details\nContrast Ratio   : Fill details\n\nVisual focus indicator of an element needs to have a contrast ratio of 3:1 at the minimum with its inner and outer background. From the color codes we can see that the visual focus indicator is not meeting the minimum threshold for the contrast with its inner and outer adjacent color making it difficult for the color blind and low vision users to identify the focussed element."
           copyColor("Focus indicator","Inner adjacent",msg17);
           break; 
         case 18:
@@ -717,7 +717,7 @@ function initilizeWidget() {
 
     
    function copyColor (color1,color2,description){
-    let myMessage = "\nContrast Details\n\n"+ color1 +" color :" + document.getElementById('orForeHex').value +"\n" + color2 +" color :" + document.getElementById('orBackHex').value + "\nContrast Ratio   : " + document.getElementById('orRatio').innerText + " \n\n" + description + " \n\n";
+    let myMessage = "\nContrast Details\n\n"+ color1 +" color: " + document.getElementById('orForeHex').value +"\n" + color2 +" color: " + document.getElementById('orBackHex').value + "\nContrast Ratio: " + document.getElementById('orRatio').innerText + " \n\n" + description + " \n\n";
     navigator.clipboard.writeText(myMessage);
 
     document.getElementById('copyStatus').innerText ="Copied"

@@ -664,7 +664,7 @@ function initilizeWidget() {
           copyColor("Foreground text","Background (Gradient)",msg7);
           break;
         case 8:
-          let msg8 ="When color alone is used as the focus indicator of an element, people who are blind, have low vision, or are color blind will not be able to understand the focussed state of an element. It is imperative to have a 3:1 contrast ratio between the default border color and focused state color so that users with color blindness or low vision will be able to understand the element that is in a focussed state."
+          let msg8 ="When color alone is used as the focus indicator of an element, people who are blind, have low vision, or are color blind will not be able to understand the focused state of an element. It is imperative to have a 3:1 contrast ratio between the default border color and focused state color so that users with color blindness or low vision will be able to understand the element that is in a focused state."
           copyColor("Focus indicator","Default Element",msg8);
           break;
         case 9:
@@ -676,11 +676,11 @@ function initilizeWidget() {
           copyColor("Visual boundary","Outer adjacent",msg10);
           break;
         case 11:
-          let msg11="When the visual focus indicator of an element is inside the component it needs to have a contrast ratio of 3:1 at the minimum with its inner background. From the color codes we can see that the visual focus indicator is not meeting the minimum threshold for the contrast with its inner adjacent color making it difficult for the colorblind and low vision users to identify the focussed element."
+          let msg11="When the visual focus indicator of an element is inside the component it needs to have a contrast ratio of 3:1 at the minimum with its inner background. From the color codes we can see that the visual focus indicator is not meeting the minimum threshold for the contrast with its inner adjacent color making it difficult for the colorblind and low vision users to identify the focused element."
           copyColor("Focus indicator","Inner adjacent",msg11);
           break;
         case 12:
-          let msg12="When the visual focus indicator of an element is outside the component it needs to have a contrast ratio of 3:1 at the minimum with its outer background. From the color codes we can see that the visual focus indicator is not meeting the minimum threshold for the contrast with its outer adjacent color making it difficult for the colorblind and low vision users to identify the focussed element."
+          let msg12="When the visual focus indicator of an element is outside the component it needs to have a contrast ratio of 3:1 at the minimum with its outer background. From the color codes we can see that the visual focus indicator is not meeting the minimum threshold for the contrast with its outer adjacent color making it difficult for the colorblind and low vision users to identify the focused element."
           copyColor("Focus indicator","Outer adjacent",msg12);
           break;  
         case 13:
@@ -700,7 +700,7 @@ function initilizeWidget() {
           copyColor("Link text","Surrounding text",msg16);
           break;   
         case 17:
-          let msg17 ="\nFocus indicator color :"+ document.getElementById('orForeHex').value + "\nOuter adjacent color :Fill details\nContrast Ratio   : Fill details\n\nVisual focus indicator of an element needs to have a contrast ratio of 3:1 at the minimum with its inner and outer background. From the color codes we can see that the visual focus indicator is not meeting the minimum threshold for the contrast with its inner and outer adjacent color making it difficult for the color blind and low vision users to identify the focussed element."
+          let msg17 ="\nFocus indicator color :"+ document.getElementById('orForeHex').value + "\nOuter adjacent color :Fill details\nContrast Ratio   : Fill details\n\nVisual focus indicator of an element needs to have a contrast ratio of 3:1 at the minimum with its inner and outer background. From the color codes we can see that the visual focus indicator is not meeting the minimum threshold for the contrast with its inner and outer adjacent color making it difficult for the color blind and low vision users to identify the focused element."
           copyColor("Focus indicator","Inner adjacent",msg17);
           break; 
         case 18:
